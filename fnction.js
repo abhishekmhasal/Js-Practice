@@ -173,15 +173,15 @@
 // console.log(newArry);
 //#region
 //Q16
-function findDuplicate(arr) {
-  let duplicate = [];
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = i + 1; j < arr.length; j++) {
-      if (arr[i] == arr[j] && !duplicate.includes(arr[i]))
-        duplicate.push(arr[i]);
-    }
-  }
-  return duplicate;
-}
-let duplicates = findDuplicate([10, 20, 10, 30, 20, 30, 40, 50, 40]);
-console.log(duplicates);
+// function findDuplicate(arr) {
+//   let duplicate = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[i] == arr[j] && !duplicate.includes(arr[i]))
+//         duplicate.push(arr[i]);
+//     }
+//   }
+//   return duplicate;
+// }
+// let duplicates = findDuplicate([10, 20, 10, 30, 20, 30, 40, 50, 40]);
+// console.log(duplicates);
