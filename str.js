@@ -220,6 +220,85 @@
 //   }
 
 // }
-
 // console.log("consonent:" + consonent);
 // console.log("vowel :"  + vowel);
+
+// let count = 0;
+// for (let i = 2; i <= 20; i += 3) {
+//     count++;
+// }
+// console.log(count);
+//#region 
+//Q16
+// let n = Number(prompt("enetr  N value"));
+// for(let i =1 ;i<=n ;i++){
+//   console.log("hello world");
+  
+//#region
+//Q17
+// let num = 5;
+// let fact = 1;
+// for(let i = 1 ;i<=num;i++){
+// fact =fact * i
+// }
+// console.log(fact);
+
+//#region
+//Q18
+
+// let sum =0 
+// let num = Number(prompt("enter a num"));
+// for(let i = 0 ;i <=num ;i++){
+//   sum+=i
+//   console.log(sum);
+// }
+
+// console.log(sum);
+
+//#region
+//Q19
+
+// let start = 1;
+// let end =10;
+// let sum  =0 ;
+// let odd =0 ;
+// for(let i =start;i<=end;i++){
+//   if(i %2===0){
+//     sum+=i;
+//   }
+//  else{
+//   odd+=i
+//  }
+// }
+// console.log(sum );
+// console.log(odd);
+
+
+//#region
+//Q20
+
+// let n=Number(prompt("enter number"));
+// if(n<=1)console.log("not prime");
+// else if(n==2)console.log("prime");
+// else if(n%2===0)console.log("not prime");
+// else {
+//   let isPrime = true;
+//   for(i=3;i<=Math.floor(Math.sqrt(n));i+=2){
+//        if(n%i==0){
+//      isPrime = false;
+//        break;
+//        }
+     
+//   }
+//   console.log(isPrime?"prime":"not prime");
+  
+// }
+//
+//#region 
+// let n =Number(prompt("Enter a number"))
+// let rev = 0 ;
+// while(n>0){
+//   rev = (rev*10) + (n%10)
+//    n= Math.floor(n /10)
+// }
+// console.log(rev);
