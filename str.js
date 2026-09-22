@@ -228,12 +228,12 @@
 //     count++;
 // }
 // console.log(count);
-//#region 
+//#region
 //Q16
 // let n = Number(prompt("enetr  N value"));
 // for(let i =1 ;i<=n ;i++){
 //   console.log("hello world");
-  
+
 //#region
 //Q17
 // let num = 5;
@@ -246,7 +246,7 @@
 //#region
 //Q18
 
-// let sum =0 
+// let sum =0
 // let num = Number(prompt("enter a num"));
 // for(let i = 0 ;i <=num ;i++){
 //   sum+=i
@@ -273,7 +273,6 @@
 // console.log(sum );
 // console.log(odd);
 
-
 //#region
 //Q20
 
@@ -288,17 +287,100 @@
 //      isPrime = false;
 //        break;
 //        }
-     
+
 //   }
 //   console.log(isPrime?"prime":"not prime");
-  
+
 // }
 //
-//#region 
-// let n =Number(prompt("Enter a number"))
-// let rev = 0 ;
-// while(n>0){
-//   rev = (rev*10) + (n%10)
-//    n= Math.floor(n /10)
+//#region
+// let n = Number(prompt("Enter a number"));
+// let rev = 0;
+// while (n > 0) {
+//   rev = rev * 10 + (n % 10);
+//   n = Math.floor(n / 10);
 // }
 // console.log(rev);
+
+//#region
+//Qum21
+// let n  = Number(prompt("Enter a Number"));
+// let count = 0;
+// let copy = n;
+// while(n>0){
+//   count++;
+//  n = Math.floor(n/10)
+// }
+// console.log(count);
+
+// if(count!= 10) console.log("Number is Invalid");
+
+// else{
+//   let ans = 0 ;
+//   while(copy>0){
+//   let dig = copy/10;
+//   ans = ans + ( dig * copy);
+//   count--;
+//   copy = Math.floor(copy/10)
+//   }
+// console.log(ans%11==0?" Valid ISBN":"Invalid Isbin");
+
+// }
+//#region
+//Q22
+// let n = Number(prompt("Enter a Number"));
+// let copy = n , count = 0;
+// let sq = n*n ;
+// while(n>0){
+//   count++;
+//   n = Math.floor(n/10);
+// }
+// if(sq % Math.pow(10,count)== copy){
+//   console.log("automorphic num");
+
+// }else console.log("no automorphic num");
+//do while
+
+//#region
+//Q23
+// const prompt = require("prompt-sync")()
+// let user;
+// let computer = Math.floor(((Math.random() * 100) + 1));
+// let attempts = 0;
+// do{
+//   attempts++
+//   user = Number(prompt("Enter a number from 1 to 100  "));
+//   if (user > computer) {
+//     console.log("too large");
+//   } else if (user < computer) {
+//     console.log("too small");
+//   } else if (user == computer) {
+//     console.log(`congratulation you guess correct num with ${attempts} attmpts`);
+//   }
+// } while(user != computer);
+//#region
+//Q24 calculator
+ const prompt = require("prompt-sync")();
+let n;
+do {
+  console.log("Enter 1 for a addition");
+  console.log("Enter 2 for a subtraction");
+  n = Number(prompt("enter a  number "));
+  switch (n) {
+    case 1: {
+      let a = Number(prompt(" Entr a frist number"));
+      let b = Number(prompt("Enter a second number"));
+      console.log(" Addition is ", a + b);
+      break;
+    }
+    case 2: {
+      let a = Number(prompt("enter a frist number"));
+      let b = Number(prompt("enter a second num "));
+      console.log("subtractin is", a - b);
+      break;
+    }
+    default:
+      console.log("Invalid num");
+  }
+  n = Number(prompt("Enter a 10 for a recontinue program "))
+} while (n == 10);
