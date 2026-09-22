@@ -360,27 +360,41 @@
 // } while(user != computer);
 //#region
 //Q24 calculator
- const prompt = require("prompt-sync")();
-let n;
-do {
-  console.log("Enter 1 for a addition");
-  console.log("Enter 2 for a subtraction");
-  n = Number(prompt("enter a  number "));
-  switch (n) {
-    case 1: {
-      let a = Number(prompt(" Entr a frist number"));
-      let b = Number(prompt("Enter a second number"));
-      console.log(" Addition is ", a + b);
-      break;
-    }
-    case 2: {
-      let a = Number(prompt("enter a frist number"));
-      let b = Number(prompt("enter a second num "));
-      console.log("subtractin is", a - b);
-      break;
-    }
-    default:
-      console.log("Invalid num");
-  }
-  n = Number(prompt("Enter a 10 for a recontinue program "))
-} while (n == 10);
+//  const prompt = require("prompt-sync")();
+// let n;
+// do {
+//   console.log("Enter 1 for a addition");
+//   console.log("Enter 2 for a subtraction");
+//   n = Number(prompt("enter a  number "));
+//   switch (n) {
+//     case 1: {
+//       let a = Number(prompt(" Entr a frist number"));
+//       let b = Number(prompt("Enter a second number"));
+//       console.log(" Addition is ", a + b);
+//       break;
+//     }
+//     case 2: {
+//       let a = Number(prompt("enter a frist number"));
+//       let b = Number(prompt("enter a second num "));
+//       console.log("subtractin is", a - b);
+//       break;
+//     }
+//     default:
+//       console.log("Invalid num");
+//   }
+//   n = Number(prompt("Enter a 10 for a recontinue program "))
+// } while (n == 10);
+//#region
+//Q25
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("enter a number:"));
+// let temp = n;
+// let sum = 0;
+// while (temp > 0) {
+//   let digit = temp % 10;
+//   sum = sum + digit;
+//   temp = Math.floor(temp / 10);             
+// }
+// if (n % sum === 0) {
+//   console.log(" harshd number");
+// } else console.log("not harshrd number");
