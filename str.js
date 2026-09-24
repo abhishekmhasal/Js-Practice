@@ -453,14 +453,63 @@
 // }
 //#region
 //Q28
-let prompt = require("prompt-sync")();
-let n = Number(prompt(" Enter a number"));
-for (let i = 1; i <= n; i++) {
-  for (let j = 1; j <= n; j++) {
-    if (i == j || i + j == n + 1) {
-      process.stdout.write("*");
-    } else process.stdout.write("  ");
-  }
-  console.log();
-  
-}
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt(" Enter a number"));
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 1; j <= n; j++) {
+//     if (i == j || i + j == n + 1) {
+//       process.stdout.write("*");
+//     } else process.stdout.write("  ");
+//   }
+//   console.log();
+
+// }
+
+//#region
+//Q29
+// let arr =[ 10,20,30,40];
+
+// let sum =0;
+// for(let i =0 ;i<arr.length;i++){
+//   sum+=arr[i]
+// }
+// console.log(sum);
+//#region
+//Q30
+// let arr = [10, 255, 30, 40];
+// let max = arr[0];
+// for (let i = 1; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   }
+// }
+// console.log(max);
+
+//#region
+//Q31
+//let arr=[30,20,50,76,45,]
+// let max = Math.max(arr[0],arr[1])
+// let sMax = Math.min(arr[0],arr[1])
+// for(i=2;i<arr.length;i++){
+//   if(arr[i]>max){
+//   sMax=max
+//   max =arr[i]
+//   }
+//   else if(arr[i]>sMax && arr[i]!=max){
+//     max=arr[i];
+//   }
+// }
+// console.log(sMax);
+//#region
+//Q 32
+//reverae arr
+// let arr= [20,54,78,95,34]
+// let i =0,j = arr.length-1 
+// while(i<j){
+//   let temp = arr[i]
+//   arr[i]=arr[j]
+//   arr[j]=temp
+//   i++
+//   j--
+// }
+// console.log(arr);
