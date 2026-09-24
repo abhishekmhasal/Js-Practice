@@ -393,8 +393,74 @@
 // while (temp > 0) {
 //   let digit = temp % 10;
 //   sum = sum + digit;
-//   temp = Math.floor(temp / 10);             
+//   temp = Math.floor(temp / 10);
 // }
 // if (n % sum === 0) {
 //   console.log(" harshd number");
 // } else console.log("not harshrd number");
+//#region
+//Q26 strong number
+//let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter a number"));
+// let copy = n;
+// ans = 0;
+// while (n > 0) {
+//   dig = n % 10;
+//   let fact = 1;
+//   for (let i = 1; i <= dig; i++) {
+//     fact = fact * i;
+//   }
+//   ans = ans + fact;
+//   n = Math.floor(n / 10);
+// }
+// if (copy == ans) console.log(" strong  number");
+// else console.log("not a strong number");
+
+//pattrn programing
+
+//#region
+//Q26
+// let prompt = require("prompt-sync")();
+//  let n = Number(prompt(" Enter a number"));
+// for(let i=1;i<=n; i++){
+//   for(let j = 1;j<=i;j++){
+//     process.stdout.write(j.toString());
+//   }
+//   console.log( );
+// }
+
+// for (let i = 1; i <= n; i++) {
+//   let row = " ";
+//   for (let j = 1; j <= i; j++) {
+//     row += j;
+//   }
+//   console.log(row);
+// }
+
+//#region
+// Q27
+// let prompt = require("prompt-sync")()
+// let n = Number(prompt(" Enter a number"))
+// for(let i = 1;i<=n;i++){
+//   for(let j =1 ;j<=n-i;j++){
+//     process.stdout.write("  ")
+//   }
+// for(let j=1;j<=i;j++){
+//   process.stdout.write("* ")
+// }
+// console.log();
+
+// }
+//#region
+//Q28
+let prompt = require("prompt-sync")();
+let n = Number(prompt(" Enter a number"));
+for (let i = 1; i <= n; i++) {
+  for (let j = 1; j <= n; j++) {
+    if (i == j || i + j == n + 1) {
+      process.stdout.write("*");
+    } else process.stdout.write("  ");
+  }
+  console.log();
+  
+}
